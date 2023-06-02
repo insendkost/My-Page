@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header><h1 id="title">Contact Us</h1></header>
+    <main>
+      <!-- novalidate - to disable browser validation -->
+      <form action="/" method="GET">
+        <!-- SECTION 1 -->
+        <section id="section_1">
+          <h2>How can we help you?</h2>
+          <ul>
+            <!-- ITEM - 1 -->
+            <li>
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" required />
+            </li>
+            <!-- ITEM - 2 -->
+            <li>
+              <label for="email">Your Email Address</label>
+              <input type="email" name="email" id="email" required />
+            </li>
+            <!-- ITEM - 3 -->
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input type="tel" name="phone" id="phone" required />
+            </li>
+            <!-- ITEM - 4 -->
+            <li>
+              <label for="message">Your Message</label>
+              <textarea name="message" id="message" rows="6"></textarea>
+            </li>
+            <!-- ITEM - 5 -->
+            <li>
+              <label for="list">How did you find us?</label>
+              <select name="list" id="list">
+                <option value="google">Google</option>
+                <option value="friend">Friend</option>
+                <option value="ad">Advertisement</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section id="section_2">
+          <h2>How should we reply?</h2>
+          <ul>
+            <!-- ITEM - 1 -->
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="radio-selector-phone"
+                class="user-radio"
+                id="userradio-1"
+                value="phone"
+              />
+              <label for="">Call me</label>
+            </li>
+            <!-- ITEM - 2 -->
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="radio-selector-email"
+                class="user-radio"
+                id="userradio-2"
+                value="email"
+              />
+              <label for="">Email me</label>
+            </li>
+            <!-- ITEM - 3 -->
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="radio-selector-noreply"
+                class="user-radio"
+                id="userradio-3"
+                value="email"
+              /><label for="">Don't reply</label>
+            </li>
+          </ul>
+          <!-- SECTION 3 -->
+          <section id="section_3">
+            <ul>
+              <li class="inline-control">
+                <input type="checkbox" id="agree-terms" name="user-agreement" />
+                <label for="">Accept Terms</label>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- SECTION 4 -->
+        <section id="section_4">
+          <!-- Buttons -->
+          <ul>
+            <!-- Buttons -->
+            <li>
+              <button type="reset">Clear</button>
+              <button type="submit">Submit</button>
+            </li>
+          </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+html {
+  --size-std-h: 1.5rem;
+
+  --default-font: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+body {
+  background-color: rgb(125, 191, 253);
+  font-family: var(--default-font);
+
+  line-height: 1.5;
+  color: #333;
+}
+form {
+  margin: auto;
+  padding: 1rem;
+  width: 65%;
+  /* height: 30rem; */
+  background-color: rgb(189, 225, 226);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+label {
+  color: rgb(26, 69, 82);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(195, 162, 226);
+}
+select:focus {
+  background-color: rgb(226, 225, 181);
+}
+
+button {
+  font: inherit;
+  border: 1px solid rgb(49, 20, 151);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(97, 71, 192);
+  /* color: white; */
+}
+
+.inline-control {
+  display: flex;
+}
+.inline-control label {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+.inline-control input {
+  width: auto;
+}
+
+#section_3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#section_4 {
+  text-align: right;
+}
