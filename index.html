@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- novalidate - to disable browser validation -->
+      <form action="/" method="GET">
+        <section class="submission-forms">
+          <h2>Your pesonal details</h2>
+          <ul>
+            <li>
+              <label for="userinput">Your name</label>
+              <input
+                type="text"
+                name="user-input"
+                id="userinput"
+                required
+                placeholder="Enter your name"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your email</label>
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                placeholder="Enter your email"
+              />
+            </li>
+            <li>
+              <label for="">Your age</label>
+              <input
+                type="number"
+                name="user-age"
+                id="userage"
+                placeholder="min 18"
+              />
+            </li>
+
+            <li>
+              <label for="">Your password</label>
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                required
+                minlength="8"
+                placeholder="min 8 characters"
+              />
+            </li>
+            <li>
+              <label for="">checkbox</label>
+              <input type="checkbox" name="user-checkbox" id="usercheckbox" />
+            </li>
+            <li>
+              <label for="">Date</label>
+              <input type="date" name="user-date" id="userdate" />
+            </li>
+          </ul>
+        </section>
+        <section class="form-control-inline-1">
+          <h2>More Details</h2>
+          <hr />
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="radio-selector-phone"
+                class="user-radio"
+                id="userradio-1"
+                value="phone"
+              />
+              <label for="">Verify by phone</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="radio-selector-email"
+                class="user-radio"
+                id="userradio-2"
+                value="email"
+              />
+              <label for="">Verify by email</label>
+            </li>
+          </ul>
+        </section>
+        <section class="form-control-inline-2">
+          <hr />
+          <ul>
+            <li>
+              <input type="checkbox" id="agree-terms" name="user-agreement" />
+              <label for="user-agreement">If you agree to subscribe?</label>
+            </li>
+          </ul>
+        </section>
+        <section class="btn-control-sec">
+          <ul>
+            <li><button type="reset">Reset</button></li>
+            <li><button type="submit">Submit</button></li>
+          </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
